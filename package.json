@@ -10,7 +10,9 @@
   "author": "Frozen Burrito",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "express-layouts": "^1.0.0",
     "mongoose": "^5.11.11",
     "twilio": "^3.54.2"
   },

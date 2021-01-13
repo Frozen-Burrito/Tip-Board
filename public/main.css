@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: 'Lato', sans-serif;
+  color: #212121;
+}
+
+h2 {
+  margin: 2rem 0;
+
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: lighter;
+  word-spacing: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.highlight {
+  color: #FF9800!important;
+}
+
+a:visited {
+  color: inherit
+}
+
+i {
+  font-size: 3rem;
+  color: #212121;
+}
+
+div.container {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: rgb(139, 139, 139);
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: .8rem 1.2rem;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+  transition: .3s ease background-color;
+}
+
+.btn:hover {
+  background-color: #ffa319;
+}
+
+.primary {
+  background-color: #FF9800;
+  border-bottom: 3px solid #F57C00;
+  color: rgb(240, 240, 240);
+}
+
+div.card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+div.card .card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Forms */
+form {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+form div {
+  margin: 1.4rem 0;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+form div label {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: .6rem 1rem;
+  display: inline-block;
+
+  border-radius: 5px;
+  border: 1px solid rgb(139, 139, 139);
+  font-size: 1.2rem;
+  transition: .2s ease border-color;
+}
