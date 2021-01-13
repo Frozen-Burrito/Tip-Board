@@ -4,6 +4,8 @@ const expressLayouts = require('express-layouts');
 const routes = require('./routes');
 const apiRoutes = require('./routes/api_routes');
 
+const connectToMongo = require('./helpers/connectToMongo');
+
 const app = express();
 
 if (process.env.NODE_ENV !== 'production') {
@@ -21,6 +23,9 @@ app.use(expressLayouts);
 app.use(express.static('public'));
 
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
+
+connectToMongo(process.env.MONGO_URI);
 
 app.use('/', routes);
 
